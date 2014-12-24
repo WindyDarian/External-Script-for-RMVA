@@ -1,21 +1,23 @@
+#External Script for RMVA
+
 I am picking up RPG Maker VX Ace again... many years after my
 last use.
 
 Now I just want to use GitHub to manage my code.
 
-I just added this script before Main in Script 
+I just added this script before Main in Script
 Editor
 
-'''
+```ruby
 
 =begin
 
   Created On: Dec 24, 2014
-  
+
   I want to use GitHub to manage the code so I will start executing
   external code files here.
-  
-  It is unsafe, and it is necessary pack them in the game is 
+
+  It is unsafe, and it is necessary pack them in the game is
   published.
 
 
@@ -29,9 +31,9 @@ module Hello_World
         return 'Hello World!!!'
     end
 end
-  
+
   and then executed Hello_World.hellow, the result was a success.
-  
+
   Author: Windy Darian
 
 =end
@@ -48,4 +50,4 @@ sl.push('src/Hello_World.rb')
 sl.each do |fname|
   eval(File.read(fname),binding)
 end
-'''
+```
